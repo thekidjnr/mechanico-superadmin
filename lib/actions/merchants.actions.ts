@@ -6,7 +6,7 @@ import { revalidatePath } from "next/cache";
 import { sendWelcomeEmail } from "@/lib/email";
 
 export const getAdminStats = async () => {
-  const supabase = await createClient();
+  const supabase = createAdminClient();
 
   const { data, error } = await supabase
     .from("profiles")
