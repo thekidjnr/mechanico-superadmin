@@ -53,9 +53,11 @@ export default function LoginPage() {
               <Label className="text-white/60">Email</Label>
               <Input
                 type="email"
-                placeholder="admin@mechanico.com"
+                placeholder="admin@mechanico.io"
                 value={form.email}
-                onChange={(e) => setForm((p) => ({ ...p, email: e.target.value }))}
+                onChange={(e) =>
+                  setForm((p) => ({ ...p, email: e.target.value }))
+                }
                 required
                 className="border-white/10 bg-white/5 text-white placeholder:text-white/20 focus-visible:border-admin-accent focus-visible:ring-admin-accent/30"
               />
@@ -67,7 +69,9 @@ export default function LoginPage() {
                 type="password"
                 placeholder="••••••••"
                 value={form.password}
-                onChange={(e) => setForm((p) => ({ ...p, password: e.target.value }))}
+                onChange={(e) =>
+                  setForm((p) => ({ ...p, password: e.target.value }))
+                }
                 required
                 className="border-white/10 bg-white/5 text-white placeholder:text-white/20 focus-visible:border-admin-accent focus-visible:ring-admin-accent/30"
               />

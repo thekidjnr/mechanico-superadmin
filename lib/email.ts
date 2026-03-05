@@ -3,7 +3,7 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const MERCHANT_LOGIN_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://app.mechanico.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://app.mechanico.io";
 const FROM_ADDRESS =
   process.env.RESEND_FROM ?? "Mechanico <theveinverse@gmail.com>";
 
