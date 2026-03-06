@@ -4,8 +4,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 const MERCHANT_LOGIN_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://app.mechanico.io";
-const FROM_ADDRESS =
-  process.env.RESEND_FROM ?? "Mechanico <theveinverse@gmail.com>";
+const FROM_ADDRESS = `Mechanico <${process.env.RESEND_FROM_EMAIL}>`;
 
 function buildWelcomeEmail({
   firstName,
